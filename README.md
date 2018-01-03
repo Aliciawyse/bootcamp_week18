@@ -5,18 +5,21 @@
 
 ### Part 1:
 
-Set up dependencies and our Mongo database
+There are several dependencies used in this project. Check them out in the `package.json` file. 
 
 ```javascript
+"dependencies": {
+    "body-parser": "^1.18.2",
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.16.2",
+    "express-handlebars": "^3.0.0",
+    "mongojs": "^2.4.1",
+    "mongoose": "^4.13.7",
+    "request": "^2.83.0"
+  }
+```
 
-//dependencies
-var express = require("express");
-var mongojs = require("mongojs");
-
-//require requests and cheerio. 
-// This makes scraping possible
-var request = require("request");
-var cheerio = require("cheerio");
+```javascript
 
 //initiate express
 var app = express();
